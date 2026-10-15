@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO Meta Tags -->
-  <title>Amanda Ribeiro — Nutricionista Clínica e Esportiva | Método BASIC</title>
+  <title>Novais Resgalla — Advocacia Especializada em Direito de Família e Sucessões</title>
   <meta name="description"
-    content="Nutrição clínica e esportiva por Amanda Ribeiro (UFG). Método BASIC: resultado com o básico bem feito para emagrecimento, hipertrofia, recomposição corporal e performance na corrida.">
+    content="Novais Resgalla Advocacia. Especialistas em Direito de Família e Sucessões. Atendimento humano, seguro e 100% digital com Julia Resgalla e Isadora Novais.">
 
   <!-- Google Fonts Preconnect and Import -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
     rel="stylesheet">
 
   <!-- Preload da imagem principal hero -->
-  <link rel="preload" as="image" href="img_hero.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -28,72 +28,128 @@
 
   <div class="site-wrapper">
 
-    <!-- Elementos Decorativos de Fundo -->
-    <div class="bg-blurs-container" aria-hidden="true">
-      <div class="bg-blur bg-blur-1"></div>
-      <div class="bg-blur bg-blur-2"></div>
-      <div class="bg-blur bg-blur-3"></div>
-    </div>
+    <!-- 1. HERO SECTION (100% da tela com hero.jpg cobrindo todo o fundo) -->
+    <section class="hero-full" id="hero">
 
-    <!-- Monograma Centralizado de Fundo -->
-    <div class="monogram" aria-hidden="true">
-      <img src="monograma_ar.svg" alt="Monograma Amanda Ribeiro" class="monogram-img" loading="lazy">
-    </div>
-
-    <!-- 1. HERO SECTION (Abertura / Apresentação Visual) -->
-    <section class="hero-split" id="hero">
-
-      <!-- Coluna Esquerda: Imagem Full-bleed com foto -->
-      <div class="hero-split-image-col fade-in-up">
-        <img src="img_hero.webp" alt="Amanda Ribeiro - Nutricionista Clínica e Esportiva" class="hero-split-img"
-          fetchpriority="high">
-
-        <!-- Overlay inferior esquerdo: Botão Me Conheça -->
-        <div class="hero-image-btn-wrapper">
-          <button type="button" class="btn-capsule" id="open-sobre-modal-btn" aria-haspopup="dialog"
-            aria-controls="sobre-modal" aria-label="Conhecer a história e atuação de Amanda Ribeiro">
-            Me Conheça
-          </button>
-        </div>
+      <!-- Imagem de Fundo Cobrindo 100% da Hero -->
+      <div class="hero-bg-wrapper" aria-hidden="true">
+        <img src="img/hero.jpg" alt="Dra. Julia Resgalla e Dra. Isadora Novais — Novais Resgalla Advocacia" class="hero-bg-img" fetchpriority="high">
+        <div class="hero-bg-overlay"></div>
       </div>
 
-      <!-- Coluna Direita: Conteúdo Editorial Curto -->
-      <div class="hero-split-content-col fade-in-up">
+      <!-- Conteúdo Editorial Sobreposto -->
+      <div class="container hero-container">
 
-        <!-- Sub-header interno da Hero -->
-        <div class="hero-split-header">
-          <div class="hero-split-brand">
-            <img src="logotipo.webp" alt="Amanda Ribeiro Nutrição" class="logotipo-img">
+        <!-- Header da Hero com Logotipo e Botão Conheça a Novais Resgalla -->
+        <header class="hero-header">
+          <div class="hero-brand">
+            <img src="logo.png" alt="Novais Resgalla Advocacia" class="logotipo-img">
+          </div>
+        </header>
+
+        <!-- Corpo Principal da Hero -->
+        <div class="hero-body">
+          <h1 class="hero-title">Direito de Família e Sucessões com cuidado e firmeza.</h1>
+          <p class="hero-desc">Atendimento humano, seguro e 100% digital — próximas de você em cada etapa.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20atendimento%20jur%C3%ADdico%20com%20o%20Novais%20Resgalla."
+              class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Falar com o Novais Resgalla no WhatsApp">
+              Falar com as Advogadas
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#sobre-escritorio" class="hero-text-link">Conheça o escritório &darr;</a>
           </div>
         </div>
 
-        <!-- Conteúdo Principal do Hero -->
-        <div class="hero-split-body">
-          <h1 class="hero-split-title">Resultado não precisa ser complicado. Precisa ser possível.</h1>
-          <p class="hero-split-desc">Aprenda a fazer o básico bem feito dentro da vida que você já tem. Planos 100%
-            individualizados para emagrecimento, hipertrofia, recomposição corporal e performance na corrida.</p>
-        </div>
 
       </div>
 
     </section>
 
-    <!-- 2. METODOLOGIA: MÉTODO BASIC BY AMANDA RIBEIRO -->
-    <section class="section metodo-basic-section" id="metodologia">
+    <!-- 2. CONHEÇA A NOVAIS RESGALLA & AS SÓCIAS -->
+    <section class="section sobre-novais-section" id="sobre-escritorio">
       <div class="container">
 
-        <!-- Citação Central do Método -->
-        <div class="basic-quote-container reveal">
-          <h2 class="section-title">Método BASIC by Amanda Ribeiro</h2>
-          <p class="basic-quote">"Você não precisa mudar sua vida para fazer uma dieta caber nela. A sua alimentação é
-            que precisa caber na sua vida."</p>
+        <!-- Apresentação Institucional do Escritório -->
+        <div class="sobre-intro-box reveal">
+          <span class="section-tag">Conheça a Novais Resgalla</span>
+          <h2 class="section-title">Sobre o Escritório</h2>
+          <div class="sobre-intro-text">
+            <p>O <strong>Novais Resgalla</strong> é um escritório de advocacia dedicado ao <strong>Direito de Família e Sucessões</strong>. Sabemos que as questões familiares envolvem muito mais do que processos: envolvem histórias, afetos e recomeços.</p>
+            <p>Por isso, unimos técnica jurídica e escuta atenta para oferecer um atendimento humano, claro e seguro. Com <strong>atuação 100% digital</strong>, estamos próximas de você onde quer que esteja, com agilidade e transparência em cada etapa.</p>
+            <p>Aqui, cada caso é tratado com firmeza na defesa dos seus direitos e cuidado com quem mais importa: <strong>você e a sua família</strong>.</p>
+          </div>
+        </div>
+
+        <!-- Vitrine das Sócias: Alternadas (Imagem na direita / Texto na esquerda e o inverso) -->
+        <div class="socias-showcase">
+
+          <!-- Sócia 1: Dra. Julia Resgalla (Texto na Esquerda, Imagem na Direita) -->
+          <article class="socia-row reveal" id="julia-resgalla">
+            <div class="socia-text-col">
+              <h3 class="socia-name">Julia Resgalla</h3>
+              <span class="socia-role">Direito de Família e Sucessões &bull; OAB/MG</span>
+              <div class="socia-bio">
+                <p>Julia Resgalla é advogada formada pela Faculdade Milton Campos, em 2022, e pós-graduada em Direito de Família e Sucessões pela mesma instituição, em 2024. Escolheu o Direito de Família por acreditar que por trás de cada processo existe uma história que merece cuidado.</p>
+                <p>Esse olhar vem também da sua vivência como evangelizadora, trabalhando de perto com crianças e famílias. Essa experiência torna sua atuação mais sensível e reforça seu propósito: transformar o Direito em um instrumento de apoio para que as pessoas possam recomeçar com segurança e acolhimento.</p>
+                <p>Dentro desse propósito, as crianças ocupam lugar central. Julia atua com especial dedicação à proteção dos pequenos, para que sejam amparados e preservados de qualquer situação que possa prejudicá-los.</p>
+              </div>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Dra.%20Julia%20Resgalla%2C%20gostaria%20de%20atendimento%20jur%C3%ADdico." class="socia-direct-link" target="_blank" rel="noopener noreferrer">
+                <span>Falar com Dra. Julia Resgalla</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+            <div class="socia-image-col">
+              <div class="socia-image-wrapper">
+                <img src="img/IMG_4991.JPEG" alt="Dra. Julia Resgalla — Sócia Novais Resgalla Advocacia" class="socia-img" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <!-- Sócia 2: Dra. Isadora Novais (Imagem na Esquerda, Texto na Direita — O Inverso) -->
+          <article class="socia-row socia-row-reverse reveal" id="isadora-novais">
+            <div class="socia-image-col">
+              <div class="socia-image-wrapper">
+                <img src="img/IMG_4713.JPEG" alt="Dra. Isadora Novais — Sócia Novais Resgalla Advocacia" class="socia-img" loading="lazy">
+              </div>
+            </div>
+            <div class="socia-text-col">
+              <h3 class="socia-name">Isadora Novais</h3>
+              <span class="socia-role">Direito de Família e Sucessões &bull; OAB/MG</span>
+              <div class="socia-bio">
+                <p>Isadora Novais é advogada formada pelo UNIPAM e pós-graduanda em Direito de Família e Sucessões pela PUC Minas. No Direito, encontrou uma profissão que une sua paixão pela área jurídica ao desejo de fazer diferença na vida das pessoas.</p>
+                <p>Seu olhar para o Direito de Família também foi construído dentro de casa. Filha de uma mulher que dedicou a vida ao Conselho Tutelar e ao acolhimento de crianças na Casa do Aconchego, cresceu próxima de histórias que mostraram, desde cedo, a importância de uma família protegida e de uma infância cuidada.</p>
+                <p>É essa vivência que, somada à sua formação, influencia a forma como enxerga a advocacia: com técnica, sensibilidade e firmeza. Para Isadora, defender direitos também é oferecer segurança para que pessoas e famílias possam atravessar momentos difíceis e construir novos caminhos.</p>
+              </div>
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Dra.%20Isadora%20Novais%2C%20gostaria%20de%20atendimento%20jur%C3%ADdico." class="socia-direct-link" target="_blank" rel="noopener noreferrer">
+                <span>Falar com Dra. Isadora Novais</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Pilares e Diferenciais Institucionais -->
+        <div class="pilares-institucionais-header reveal">
+          <h3 class="section-subtitle-editorial">Atuação dedicada ao que mais importa</h3>
         </div>
 
         <div class="basic-grid">
 
           <!-- Foto / Conceito -->
           <div class="split-image-container reveal reveal-scale">
-            <img src="metodo.png" alt="Comida real e resultados reais - Método BASIC" class="split-image"
+            <img src="img/IMG_4758.JPEG" alt="Dra. Julia Resgalla e Dra. Isadora Novais — Novais Resgalla Advocacia" class="split-image"
               loading="lazy">
           </div>
 
@@ -101,46 +157,44 @@
           <div class="pilares-basic-list">
 
             <div class="pilar-basic-card reveal reveal-delay-1">
-              <h4>Comida Real</h4>
-              <p>Alimentos que fazem parte do seu dia a dia, sem dependência de modismos "fitness" ou receitas
-                complexas.</p>
+              <h4>Atendimento Humano</h4>
+              <p>Escuta atenta para acolher a sua história e oferecer suporte com clareza em momentos decisivos da sua vida.</p>
             </div>
 
             <div class="pilar-basic-card reveal reveal-delay-2">
-              <h4>Rotina Possível</h4>
-              <p>Estratégia desenhada a partir da vida que você já tem, respeitando seus horários, trabalho e treinos.
-              </p>
+              <h4>Atuação 100% Digital</h4>
+              <p>Próximas de você onde quer que esteja, com agilidade, comodidade e transparência em cada etapa do processo.</p>
             </div>
 
             <div class="pilar-basic-card reveal reveal-delay-3">
-              <h4>Escolhas Conscientes</h4>
-              <p>Conhecimento e autonomia para que você saiba o que e por que está comendo, em qualquer ambiente.</p>
+              <h4>Técnica &amp; Firmeza</h4>
+              <p>Condução jurídica estratégica e dedicada na defesa intransigente dos seus direitos e do patrimônio familiar.</p>
             </div>
 
             <div class="pilar-basic-card reveal reveal-delay-4">
-              <h4>Consistência &amp; Sustentabilidade</h4>
-              <p>O que transforma não é o que você faz por poucos dias, mas o que consegue sustentar a longo prazo.</p>
+              <h4>Cuidado com a Família</h4>
+              <p>Atenção especial à proteção das crianças e preservação dos vínculos e do bem-estar dos envolvidos.</p>
             </div>
 
           </div>
 
         </div>
 
-        <!-- 4 Métodos de Avaliação Física no Presencial -->
+        <!-- 4 Áreas de Destaque -->
         <div class="avaliacao-box reveal">
-          <h4>Avaliação Física por meio de 4 Métodos (Presencial)</h4>
+          <h4>Especialidades em Direito de Família e Sucessões</h4>
           <div class="avaliacao-methods-grid">
             <div class="method-item reveal reveal-delay-1">
-              <span>Bioimpedância InBody</span>
+              <span>Direito de Família</span>
             </div>
             <div class="method-item reveal reveal-delay-2">
-              <span>Dobras Cutâneas</span>
+              <span>Direito das Sucessões</span>
             </div>
             <div class="method-item reveal reveal-delay-3">
-              <span>Circunferências</span>
+              <span>Proteção da Infância</span>
             </div>
             <div class="method-item reveal reveal-delay-4">
-              <span>Fotos de Acompanhamento</span>
+              <span>Planejamento Sucessório</span>
             </div>
           </div>
         </div>
@@ -148,14 +202,13 @@
       </div>
     </section>
 
-    <!-- 3. SERVIÇOS & PLANOS DE ACOMPANHAMENTO -->
+    <!-- 3. SERVIÇOS & FORMAS DE ATUAÇÃO -->
     <section class="section section-dark servicos-section" id="servicos">
       <div class="container">
 
         <div class="servicos-header reveal">
-          <h2 class="section-title">Opções de Acompanhamento</h2>
-          <p class="section-lead">Formatos planejados para se adequar ao seu objetivo, tempo de evolução e estilo de
-            vida.</p>
+          <h2 class="section-title">Áreas de Atuação</h2>
+          <p class="section-lead">Soluções jurídicas estruturadas para proteger você, seus filhos e seu patrimônio com sensibilidade e técnica.</p>
         </div>
 
         <div class="carousel-container reveal" id="planos-carousel-container">
@@ -169,19 +222,18 @@
           <div class="carousel-track-wrapper" id="planos-carousel-wrapper">
             <div class="carousel-track" id="planos-carousel-track">
 
-              <!-- Plano 1: Consultoria A+ -->
+              <!-- Plano 1: Divórcio & Dissolução -->
               <div class="plano-card carousel-slide">
                 <div>
                   <div class="plano-top">
-                    <span class="plano-tag">100% Online</span>
+                    <span class="plano-tag">Consensual &bull; Litigioso</span>
                   </div>
-                  <h3>Consultoria A+</h3>
-                  <p>Atendimento digital prático por formulário detalhado, com elaboração de protocolo estratégico sob
-                    medida para quem precisa de agilidade e autonomia.</p>
+                  <h3>Divórcio &amp; Dissolução</h3>
+                  <p>Condução humanizada e estratégica para dissolução de casamentos e uniões estáveis, partilha de bens e acordos com proteção patrimonial.</p>
                 </div>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20tenho%20interesse%20na%20Consultoria%20A%2B%20(100%25%20Online).%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Quero a Consultoria A+">
-                  Quero este plano
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Div%C3%B3rcio%20e%20Dissolu%C3%A7%C3%A3o%20de%20Uni%C3%A3o%20Est%C3%A1vel."
+                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Consultar sobre Divórcio e Dissolução">
+                  Consultar área
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -190,19 +242,18 @@
                 </a>
               </div>
 
-              <!-- Plano 2: Plano Start -->
+              <!-- Plano 2: Guarda & Convivência -->
               <div class="plano-card carousel-slide">
                 <div>
                   <div class="plano-top">
-                    <span class="plano-tag">1 Mês</span>
+                    <span class="plano-tag">Proteção da Criança</span>
                   </div>
-                  <h3>Plano Start</h3>
-                  <p>Consulta avulsa com avaliação física e nutricional completa, protocolo inicial individualizado e 30
-                    dias de suporte para dar o primeiro passo.</p>
+                  <h3>Guarda &amp; Convivência</h3>
+                  <p>Definição responsável de guarda compartilhada ou unilateral e regulamentação de convivência, sempre priorizando o melhor interesse dos filhos.</p>
                 </div>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20tenho%20interesse%20no%20Plano%20Start%20(Consulta%20Avulsa).%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Quero o Plano Start">
-                  Quero este plano
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Guarda%20e%20Regime%20de%20Conviv%C3%AAncia."
+                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Consultar sobre Guarda e Convivência">
+                  Consultar área
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -211,19 +262,18 @@
                 </a>
               </div>
 
-              <!-- Plano 3: Plano Power (Destaque) -->
+              <!-- Plano 3: Pensão Alimentícia (Destaque) -->
               <div class="plano-card plano-card-featured carousel-slide">
                 <div>
                   <div class="plano-top">
-                    <span class="plano-tag">Trimestral &bull; 3 Consultas</span>
+                    <span class="plano-tag">Fixação &bull; Revisão &bull; Execução</span>
                   </div>
-                  <h3>Plano Power</h3>
-                  <p>O formato ideal para emagrecimento consistente, hipertrofia e evolução de ritmo na corrida, com
-                    reavaliações periódicas e refinamento constante.</p>
+                  <h3>Pensão Alimentícia</h3>
+                  <p>Ações de fixação, revisão, exoneração e execução de alimentos, buscando um valor justo para suprir as reais necessidades de quem precisa.</p>
                 </div>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20tenho%20interesse%20no%20Plano%20Power%20(Trimestral).%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Quero o Plano Power">
-                  Quero este plano
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Pens%C3%A3o%20Aliment%C3%ADcia."
+                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Consultar sobre Pensão Alimentícia">
+                  Consultar área
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -232,19 +282,18 @@
                 </a>
               </div>
 
-              <!-- Plano 4: Plano Elite -->
+              <!-- Plano 4: Inventário & Partilha -->
               <div class="plano-card carousel-slide">
                 <div>
                   <div class="plano-top">
-                    <span class="plano-tag">Semestral &bull; 6 Consultas</span>
+                    <span class="plano-tag">Judicial &bull; Extrajudicial</span>
                   </div>
-                  <h3>Plano Elite</h3>
-                  <p>Periodização nutricional de médio prazo para metas profundas de recomposição corporal e preparação
-                    para provas de corrida (5k, 10k, 21k ou maratona).</p>
+                  <h3>Inventário &amp; Partilha</h3>
+                  <p>Abertura e condução ágil de inventários em cartório ou via judicial, regularizando a sucessão de bens com clareza e segurança jurídica.</p>
                 </div>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20tenho%20interesse%20no%20Plano%20Elite%20(Semestral).%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Quero o Plano Elite">
-                  Quero este plano
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Invent%C3%A1rio%20e%20Partilha%20de%20Bens."
+                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Consultar sobre Inventário e Partilha">
+                  Consultar área
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -253,19 +302,18 @@
                 </a>
               </div>
 
-              <!-- Plano 5: Plano Prime -->
+              <!-- Plano 5: Planejamento Sucessório -->
               <div class="plano-card carousel-slide">
                 <div>
                   <div class="plano-top">
-                    <span class="plano-tag">Anual &bull; 12 Meses</span>
+                    <span class="plano-tag">Proteção Patrimonial &bull; Testamento</span>
                   </div>
-                  <h3>Plano Prime</h3>
-                  <p>Acompanhamento completo de 1 ano para transformar seu estilo de vida, manter a consistência e
-                    evoluir em todas as fases da sua rotina de treinos.</p>
+                  <h3>Planejamento Sucessório</h3>
+                  <p>Estruturação patrimonial preventiva para famílias, organização de testamentos e doações para evitar conflitos futuros e reduzir custos.</p>
                 </div>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20tenho%20interesse%20no%20Plano%20Prime%20(Anual).%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Quero o Plano Prime">
-                  Quero este plano
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Planejamento%20Sucess%C3%B3rio."
+                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Consultar sobre Planejamento Sucessório">
+                  Consultar área
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -274,19 +322,18 @@
                 </a>
               </div>
 
-              <!-- Plano 6: Plano Double -->
+              <!-- Plano 6: Filiação & Paternidade -->
               <div class="plano-card carousel-slide">
                 <div>
                   <div class="plano-top">
-                    <span class="plano-tag">Dupla / Casal</span>
+                    <span class="plano-tag">Direito de Família</span>
                   </div>
-                  <h3>Plano Double</h3>
-                  <p>Acompanhamento conjunto para duas pessoas com protocolos 100% individualizados para cada um,
-                    facilitando a rotina da casa e o alcance de metas.</p>
+                  <h3>Filiação &amp; Paternidade</h3>
+                  <p>Ações de investigação ou reconhecimento de paternidade e maternidade socioafetiva, garantindo direitos fundamentais da criança.</p>
                 </div>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20tenho%20interesse%20no%20Plano%20Double%20(Dupla/Casal).%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Quero o Plano Double">
-                  Quero este plano
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Reconhecimento%20de%20Paternidade%20e%20Filia%C3%A7%C3%A3o."
+                  class="btn-plan-cta" target="_blank" rel="noopener noreferrer" aria-label="Consultar sobre Filiação e Paternidade">
+                  Consultar área
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -295,20 +342,19 @@
                 </a>
               </div>
 
-              <!-- Serviço Avulso: Avaliação Física (sem acompanhamento) -->
+              <!-- Serviço Avulso: Consultoria Digital -->
               <div class="plano-card carousel-slide">
                 <div>
                   <div class="plano-top">
-                    <span class="plano-tag">Serviço Avulso</span>
+                    <span class="plano-tag">Atendimento 100% Digital</span>
                   </div>
-                  <h3>Avaliação Física Avulsa</h3>
-                  <p>Para quem deseja conhecer sua composição corporal, sem contratar um plano de acompanhamento. Inclui
-                    bioimpedância InBody, dobras cutâneas, circunferências e fotos.</p>
+                  <h3>Consultoria Especializada</h3>
+                  <p>Consulta jurídica individualizada por videoconferência com análise aprofundada de documentos e definição da estratégia ideal para o seu caso.</p>
                 </div>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20gostaria%20de%20agendar%20uma%20Avalia%C3%A7%C3%A3o%20F%C3%ADsica%20Avulsa."
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20Consultoria%20Jur%C3%ADdica%20Digital."
                   class="btn-plan-cta" target="_blank" rel="noopener noreferrer"
-                  aria-label="Consultar a Avaliação Física Avulsa">
-                  Consultar avaliação
+                  aria-label="Agendar Consultoria Jurídica Digital">
+                  Agendar consulta
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -332,43 +378,10 @@
         <div class="carousel-dots" id="planos-carousel-dots" role="tablist"
           aria-label="Navegação das opções de acompanhamento"></div>
 
-        <!-- Box de Destaque: Suporte Contínuo (exclusivo dos planos de acompanhamento) -->
-        <div class="plano-highlight-box reveal">
-          <div class="highlight-content">
-            <h4>Suporte Contínuo</h4>
-            <p>Todos os planos incluem <strong>suporte diário via WhatsApp</strong>, com interações livres durante todo
-              o período contratado.</p>
-          </div>
-        </div>
 
       </div>
     </section>
 
-    <!-- 4. PROVAS & RESULTADOS DOS PACIENTES -->
-    <section class="section resultados-section" id="resultados">
-      <div class="container">
-
-        <div class="resultados-header reveal">
-          <h2 class="section-title">Feedbacks dos Pacientes</h2>
-
-        </div>
-
-      </div>
-
-      <!-- Carrossel Infinito de Depoimentos (prints reais) -->
-      <div class="evolucao-marquee reveal" id="evolucao-marquee" aria-label="Feedbacks e resultados de pacientes">
-        <div class="evolucao-track" id="evolucao-track">
-          <figure class="evolucao-item"><img src="evolucao_1.webp"
-              alt="Depoimento de paciente: o 42 está começando a ficar largo" loading="lazy"></figure>
-          <figure class="evolucao-item"><img src="evolucao_2.webp"
-              alt="Depoimento de paciente: meu pai falou que eu emagreci" loading="lazy"></figure>
-          <figure class="evolucao-item"><img src="evolucao_3.webp"
-              alt="Depoimento de paciente: perdi gordura e ganhei massa" loading="lazy"></figure>
-          <figure class="evolucao-item"><img src="evolucao_4.webp"
-              alt="Depoimento de paciente: ganhando músculo e diminuindo gordura" loading="lazy"></figure>
-        </div>
-      </div>
-    </section>
 
     <!-- 5. CTA FINAL -->
     <section class="section cta-section" id="cta-final">
@@ -378,14 +391,13 @@
 
           <!-- Conteúdo Textual -->
           <div class="cta-content-premium">
-            <h2>Você não precisa escolher entre ter resultado e viver a sua vida.</h2>
-            <p>Descubra como o Método BASIC pode descomplicar sua alimentação e gerar os resultados que você sempre
-              buscou. Agende sua consulta presencial ou online.</p>
+            <h2>Cada história merece ser ouvida e cuidada com a máxima segurança jurídica.</h2>
+            <p>Conte com o Novais Resgalla Advocacia para defender seus direitos e amparar quem mais importa: você e a sua família. Atendimento 100% digital e humanizado.</p>
             <div class="cta-btn-wrapper">
-              <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20gostaria%20de%20agendar%20minha%20consulta%20nutricional."
+              <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20as%20advogadas%20do%20Novais%20Resgalla."
                 class="btn btn-primary" target="_blank" rel="noopener noreferrer"
-                aria-label="Falar com Amanda Ribeiro no WhatsApp para agendar consulta">
-                Agendar Consulta no WhatsApp
+                aria-label="Falar com o Novais Resgalla Advocacia no WhatsApp">
+                Falar com as Advogadas no WhatsApp
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -404,19 +416,18 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content reveal">
-          <p class="footer-copyright">&copy; <span id="year">2026</span> Amanda Ribeiro &bull; CRN. Todos os direitos
-            reservados.
-            Nutrição Clínica &amp; Esportiva.</p>
-          <p class="footer-credit">Método BASIC &bull; Emagrecimento &bull; Hipertrofia &bull; Recomposição &bull;
-            Corrida</p>
+          <img src="logo.png" alt="Novais Resgalla Advocacia" class="footer-logo" loading="lazy">
+          <p class="footer-copyright">&copy; <span id="year">2026</span> Novais Resgalla Advocacia. Todos os direitos reservados.
+            Direito de Família e Sucessões.</p>
+          <p class="footer-credit">Julia Resgalla &bull; Isadora Novais &bull; Atuação 100% Digital</p>
         </div>
       </div>
     </footer>
 
     <!-- 7. BOTÃO FLUTUANTE DO WHATSAPP -->
-    <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20consultas."
+    <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20atendimento%20jur%C3%ADdico%20com%20o%20Novais%20Resgalla."
       class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-      aria-label="Falar com Amanda Ribeiro no WhatsApp">
+      aria-label="Falar com Novais Resgalla Advocacia no WhatsApp">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path
@@ -427,7 +438,7 @@
 
   </div>
 
-  <!-- POPUP / MODAL: SOBRE AMANDA RIBEIRO -->
+  <!-- POPUP / MODAL: SOBRE O ESCRITÓRIO E SÓCIAS -->
   <div class="modal-backdrop" id="sobre-modal" role="dialog" aria-modal="true" aria-labelledby="modal-sobre-title"
     aria-hidden="true" data-lenis-prevent>
     <div class="modal-container" data-lenis-prevent>
@@ -443,22 +454,37 @@
       <div class="modal-content-grid">
         <!-- Coluna Esquerda: Texto + Links -->
         <div class="modal-text-col">
-          <h2 class="modal-title" id="modal-sobre-title">Prazer, Amanda!</h2>
-          <p>Sou <strong>nutricionista clínica e esportiva</strong>, formada pela <strong>Universidade Federal de Goiás
-              (UFG)</strong>, e acredito que uma boa nutrição precisa fazer sentido na vida real: <em>"Resultado não
-              precisa ser complicado. Precisa ser possível."</em></p>
+          <div class="modal-logo-wrapper">
+            <img src="logo.png" alt="Novais Resgalla Advocacia" class="modal-logo">
+            <h2 class="modal-title sr-only" id="modal-sobre-title">Novais Resgalla Advocacia</h2>
+          </div>
+          
+          <p>O <strong>Novais Resgalla</strong> é um escritório de advocacia dedicado ao <strong>Direito de Família e Sucessões</strong>. Sabemos que as questões familiares envolvem muito mais do que processos: envolvem histórias, afetos e recomeços.</p>
 
-          <p>Meu trabalho é transformar a alimentação em algo simples, estratégico e sustentável dentro da vida que você
-            já tem, com atuação especializada em <strong>emagrecimento</strong>, <strong>hipertrofia</strong>,
-            <strong>recomposição corporal</strong> e <strong>performance para corredores</strong>.
-          </p>
+          <p>Por isso, unimos técnica jurídica e escuta atenta para oferecer um atendimento humano, claro e seguro. Com <strong>atuação 100% digital</strong>, estamos próximas de você onde quer que esteja, com agilidade e transparência em cada etapa.</p>
+
+          <p>Aqui, cada caso é tratado com firmeza na defesa dos seus direitos e cuidado com quem mais importa: <strong>você e a sua família</strong>.</p>
+
+          <div style="margin: 20px 0 16px 0; border-top: 1px solid var(--color-border); padding-top: 20px;">
+            <h3 style="font-family: var(--font-title); font-size: 1.25rem; color: var(--color-text); margin-bottom: 8px; font-weight: 500;">Julia Resgalla – Sócia</h3>
+            <p>Julia Resgalla é advogada formada pela Faculdade Milton Campos, em 2022, e pós-graduada em Direito de Família e Sucessões pela mesma instituição, em 2024. Escolheu o Direito de Família por acreditar que por trás de cada processo existe uma história que merece cuidado.</p>
+            <p>Esse olhar vem também da sua vivência como evangelizadora, trabalhando de perto com crianças e famílias. Essa experiência torna sua atuação mais sensível e reforça seu propósito: transformar o Direito em um instrumento de apoio para que as pessoas possam recomeçar com segurança e acolhimento.</p>
+            <p>Dentro desse propósito, as crianças ocupam lugar central. Julia atua com especial dedicação à proteção dos pequenos, para que sejam amparados e preservados de qualquer situação que possa prejudicá-los.</p>
+          </div>
+
+          <div style="margin: 20px 0 16px 0; border-top: 1px solid var(--color-border); padding-top: 20px;">
+            <h3 style="font-family: var(--font-title); font-size: 1.25rem; color: var(--color-text); margin-bottom: 8px; font-weight: 500;">Isadora Novais – Sócia</h3>
+            <p>Isadora Novais é advogada formada pelo UNIPAM e pós-graduanda em Direito de Família e Sucessões pela PUC Minas. No Direito, encontrou uma profissão que une sua paixão pela área jurídica ao desejo de fazer diferença na vida das pessoas.</p>
+            <p>Seu olhar para o Direito de Família também foi construído dentro de casa. Filha de uma mulher que dedicou a vida ao Conselho Tutelar e ao acolhimento de crianças na Casa do Aconchego, cresceu próxima de histórias que mostraram, desde cedo, a importância de uma família protegida e de uma infância cuidada.</p>
+            <p>É essa vivência que, somada à sua formação, influencia a forma como enxerga a advocacia: com técnica, sensibilidade e firmeza. Para Isadora, defender direitos também é oferecer segurança para que pessoas e famílias possam atravessar momentos difíceis e construir novos caminhos.</p>
+          </div>
 
           <!-- Cartões de Links Principais -->
           <div class="sobre-links-stack">
             <!-- Cartão 1: WhatsApp -->
-            <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20Amanda%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento%20nutricional."
+            <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20escrit%C3%B3rio%20Novais%20Resgalla."
               class="minimal-link-card" target="_blank" rel="noopener noreferrer"
-              aria-label="Falar com Amanda no WhatsApp">
+              aria-label="Falar com Novais Resgalla no WhatsApp">
               <div class="link-card-left">
                 <div class="link-card-icon-box">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -484,7 +510,7 @@
 
             <!-- Cartão 2: Instagram -->
             <a href="https://www.instagram.com/" class="minimal-link-card" target="_blank" rel="noopener noreferrer"
-              aria-label="Acompanhar Amanda no Instagram">
+              aria-label="Acompanhar Novais Resgalla no Instagram">
               <div class="link-card-left">
                 <div class="link-card-icon-box">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -496,7 +522,7 @@
                 </div>
                 <div class="link-card-info">
                   <span class="link-card-title">Instagram</span>
-                  <span class="link-card-sub">Acompanhe rotina e conteúdos</span>
+                  <span class="link-card-sub">Acompanhe nossas orientações jurídicas</span>
                 </div>
               </div>
               <div class="link-card-arrow-box">
@@ -510,10 +536,10 @@
           </div>
         </div>
 
-        <!-- Coluna Direita: Foto Enquadrada -->
+        <!-- Coluna Direita: Foto Enquadrada das Sócias -->
         <div class="modal-image-col">
           <div class="modal-image-wrapper">
-            <img src="sobre_mim.webp" alt="Amanda Ribeiro Nutricionista" class="modal-img" loading="lazy">
+            <img src="img/IMG_4992.JPEG" alt="Dra. Julia Resgalla e Dra. Isadora Novais — Sócias Novais Resgalla Advocacia" class="modal-img" loading="lazy">
           </div>
         </div>
       </div>
@@ -591,7 +617,7 @@
         }
 
         // Animação imediata de entrada na Hero
-        const heroElements = document.querySelectorAll('.hero-split .fade-in-up, .hero .fade-in-up');
+        const heroElements = document.querySelectorAll('.hero-full .fade-in-up, .hero-split .fade-in-up, .hero .fade-in-up');
         heroElements.forEach((el, index) => {
           setTimeout(() => {
             el.classList.add('visible');
@@ -976,79 +1002,6 @@
       });
     };
 
-    // 6b. Carrossel Infinito Automático — Evolução dos Pacientes
-    const initEvolucaoMarquee = () => {
-      const marquee = document.getElementById('evolucao-marquee');
-      const track = document.getElementById('evolucao-track');
-      if (!marquee || !track) return;
-
-      // Duplica os itens para criar o loop contínuo
-      Array.from(track.children).forEach(item => {
-        const clone = item.cloneNode(true);
-        clone.setAttribute('aria-hidden', 'true');
-        track.appendChild(clone);
-      });
-
-      const speed = 0.5; // px por frame (~30px/s)
-      let offset = 0;
-      let isPaused = false;
-      let isDragging = false;
-      let startX = 0;
-      let startOffset = 0;
-
-      const halfWidth = () => track.scrollWidth / 2;
-
-      const wrap = () => {
-        const half = halfWidth();
-        if (half <= 0) return;
-        if (offset <= -half) offset += half;
-        if (offset > 0) offset -= half;
-      };
-
-      const tick = () => {
-        if (!isPaused && !isDragging && document.visibilityState !== 'hidden') {
-          offset -= speed;
-          wrap();
-          track.style.transform = `translate3d(${offset}px, 0, 0)`;
-        }
-        requestAnimationFrame(tick);
-      };
-
-      marquee.addEventListener('mouseenter', () => { isPaused = true; });
-      marquee.addEventListener('mouseleave', () => { isPaused = false; });
-
-      const onStart = (e) => {
-        isDragging = true;
-        marquee.classList.add('is-dragging');
-        startX = (e.touches ? e.touches[0] : e).clientX;
-        startOffset = offset;
-      };
-
-      const onMove = (e) => {
-        if (!isDragging) return;
-        const x = (e.touches ? e.touches[0] : e).clientX;
-        offset = startOffset + (x - startX);
-        wrap();
-        track.style.transform = `translate3d(${offset}px, 0, 0)`;
-      };
-
-      const onEnd = () => {
-        if (!isDragging) return;
-        isDragging = false;
-        marquee.classList.remove('is-dragging');
-      };
-
-      marquee.addEventListener('mousedown', onStart);
-      window.addEventListener('mousemove', onMove);
-      window.addEventListener('mouseup', onEnd);
-      marquee.addEventListener('touchstart', onStart, { passive: true });
-      marquee.addEventListener('touchmove', onMove, { passive: true });
-      marquee.addEventListener('touchend', onEnd);
-      marquee.addEventListener('touchcancel', onEnd);
-
-      requestAnimationFrame(tick);
-    };
-
     // 7. Footer Dynamic Year
     const updateFooterYear = () => {
       const yearEl = document.getElementById("year");
@@ -1063,7 +1016,6 @@
       handleWhatsappFloat();
       initPlanosCarousel();
       initSobreModal();
-      initEvolucaoMarquee();
       updateFooterYear();
     };
 
