@@ -95,8 +95,18 @@
               <span class="socia-role">Direito de Família e Sucessões &bull; OAB/MG</span>
               <div class="socia-bio">
                 <p>Julia Resgalla é advogada formada pela Faculdade Milton Campos, em 2022, e pós-graduada em Direito de Família e Sucessões pela mesma instituição, em 2024. Escolheu o Direito de Família por acreditar que por trás de cada processo existe uma história que merece cuidado.</p>
-                <p>Esse olhar vem também da sua vivência como evangelizadora, trabalhando de perto com crianças e famílias. Essa experiência torna sua atuação mais sensível e reforça seu propósito: transformar o Direito em um instrumento de apoio para que as pessoas possam recomeçar com segurança e acolhimento.</p>
-                <p>Dentro desse propósito, as crianças ocupam lugar central. Julia atua com especial dedicação à proteção dos pequenos, para que sejam amparados e preservados de qualquer situação que possa prejudicá-los.</p>
+                <div class="socia-bio-collapse" id="bio-julia-more">
+                  <div class="socia-bio-collapse-inner">
+                    <p>Esse olhar vem também da sua vivência como evangelizadora, trabalhando de perto com crianças e famílias. Essa experiência torna sua atuação mais sensível e reforça seu propósito: transformar o Direito em um instrumento de apoio para que as pessoas possam recomeçar com segurança e acolhimento.</p>
+                    <p>Dentro desse propósito, as crianças ocupam lugar central. Julia atua com especial dedicação à proteção dos pequenos, para que sejam amparados e preservados de qualquer situação que possa prejudicá-los.</p>
+                  </div>
+                </div>
+                <button type="button" class="btn-toggle-bio" aria-expanded="false" aria-controls="bio-julia-more">
+                  <span class="btn-toggle-text">Mostrar mais</span>
+                  <svg class="btn-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
               </div>
               <a href="https://wa.me/5534998988775?text=Ol%C3%A1%20Dra.%20Julia%20Resgalla%2C%20gostaria%20de%20atendimento%20jur%C3%ADdico." class="socia-direct-link" target="_blank" rel="noopener noreferrer">
                 <span>Falar com Dra. Julia Resgalla</span>
@@ -125,8 +135,18 @@
               <span class="socia-role">Direito de Família e Sucessões &bull; OAB/MG</span>
               <div class="socia-bio">
                 <p>Isadora Novais é advogada formada pelo UNIPAM e pós-graduanda em Direito de Família e Sucessões pela PUC Minas. No Direito, encontrou uma profissão que une sua paixão pela área jurídica ao desejo de fazer diferença na vida das pessoas.</p>
-                <p>Seu olhar para o Direito de Família também foi construído dentro de casa. Filha de uma mulher que dedicou a vida ao Conselho Tutelar e ao acolhimento de crianças na Casa do Aconchego, cresceu próxima de histórias que mostraram, desde cedo, a importância de uma família protegida e de uma infância cuidada.</p>
-                <p>É essa vivência que, somada à sua formação, influencia a forma como enxerga a advocacia: com técnica, sensibilidade e firmeza. Para Isadora, defender direitos também é oferecer segurança para que pessoas e famílias possam atravessar momentos difíceis e construir novos caminhos.</p>
+                <div class="socia-bio-collapse" id="bio-isadora-more">
+                  <div class="socia-bio-collapse-inner">
+                    <p>Seu olhar para o Direito de Família também foi construído dentro de casa. Filha de uma mulher que dedicou a vida ao Conselho Tutelar e ao acolhimento de crianças na Casa do Aconchego, cresceu próxima de histórias que mostraram, desde cedo, a importância de uma família protegida e de uma infância cuidada.</p>
+                    <p>É essa vivência que, somada à sua formação, influencia a forma como enxerga a advocacia: com técnica, sensibilidade e firmeza. Para Isadora, defender direitos também é oferecer segurança para que pessoas e famílias possam atravessar momentos difíceis e construir novos caminhos.</p>
+                  </div>
+                </div>
+                <button type="button" class="btn-toggle-bio" aria-expanded="false" aria-controls="bio-isadora-more">
+                  <span class="btn-toggle-text">Mostrar mais</span>
+                  <svg class="btn-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
               </div>
               <a href="https://wa.me/5534998988775?text=Ol%C3%A1%20Dra.%20Isadora%20Novais%2C%20gostaria%20de%20atendimento%20jur%C3%ADdico." class="socia-direct-link" target="_blank" rel="noopener noreferrer">
                 <span>Falar com Dra. Isadora Novais</span>
@@ -1009,10 +1029,32 @@
         yearEl.textContent = new Date().getFullYear();
       }
     };
+    // 3. Expandir / Recolher Biografia das Sócias ("Mostrar mais")
+    const initBioToggles = () => {
+      const bioButtons = document.querySelectorAll('.btn-toggle-bio');
+      bioButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const bioContainer = btn.closest('.socia-bio');
+          if (!bioContainer) return;
+          const isExpanded = bioContainer.classList.toggle('is-expanded');
+          btn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+          const textSpan = btn.querySelector('.btn-toggle-text');
+          if (textSpan) {
+            textSpan.textContent = isExpanded ? 'Mostrar menos' : 'Mostrar mais';
+          }
+          if (typeof lenis !== 'undefined' && lenis && typeof lenis.resize === 'function') {
+            lenis.resize();
+          }
+        });
+      });
+    };
+
     // Execução Segura e Imediata de Todos os Módulos
     const bootstrap = () => {
       initSmoothScroll();
       initHeroAndScroll();
+      initBioToggles();
       handleWhatsappFloat();
       initPlanosCarousel();
       initSobreModal();

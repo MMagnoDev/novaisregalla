@@ -1171,6 +1171,10 @@ body.modal-open {
   margin-bottom: 22px;
 }
 
+.socia-bio {
+  position: relative;
+}
+
 .socia-bio p {
   font-size: 0.96rem;
   color: var(--color-text-muted);
@@ -1181,6 +1185,72 @@ body.modal-open {
 
 .socia-bio p:last-child {
   margin-bottom: 0;
+}
+
+/* Bio Expandable ("Mostrar mais") */
+.socia-bio-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socia-bio-collapse-inner {
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.socia-bio.is-expanded .socia-bio-collapse {
+  grid-template-rows: 1fr;
+}
+
+.socia-bio.is-expanded .socia-bio-collapse-inner {
+  opacity: 1;
+  transition: opacity 0.35s ease 0.08s;
+}
+
+.socia-bio-collapse-inner p {
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.socia-bio-collapse-inner p + p {
+  margin-top: 14px;
+}
+
+.btn-toggle-bio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #F8F6F2;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 7px 16px;
+  margin-top: 14px;
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all var(--transition);
+}
+
+.btn-toggle-bio:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #FFFFFF;
+}
+
+.btn-toggle-bio .btn-toggle-icon {
+  transition: transform 0.3s ease;
+  stroke: currentColor;
+}
+
+.socia-bio.is-expanded .btn-toggle-bio .btn-toggle-icon {
+  transform: rotate(180deg);
 }
 
 .socia-direct-link {
@@ -1228,7 +1298,7 @@ body.modal-open {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 10%;
   display: block;
 }
 
@@ -1282,15 +1352,17 @@ body.modal-open {
 
 .basic-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
-  align-items: stretch;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 40px;
+  align-items: center;
 }
 
 .split-image-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
+  max-width: 480px;
+  margin: 0 auto;
   border-radius: 0;
   overflow: hidden;
   box-shadow: none;
@@ -1305,7 +1377,7 @@ body.modal-open {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 8%;
   display: block;
 }
 
@@ -1731,8 +1803,8 @@ body.modal-open {
 
   .split-image-container {
     height: auto;
-    aspect-ratio: 16 / 9;
-    max-width: 100%;
+    aspect-ratio: 4 / 5;
+    max-width: 440px;
     margin: 0 auto;
     width: 100%;
   }
@@ -1893,7 +1965,12 @@ body.modal-open {
 
   .socia-image-wrapper {
     max-width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
+  }
+
+  .split-image-container {
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
   }
 
   .socia-name {
